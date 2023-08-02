@@ -1,0 +1,120 @@
+@import '~antd/dist/antd.less'; // Import Ant Design styles by less entry
+
+html {
+  font-family: 'Poppins',sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  margin: 0;
+  color: #1a3b68;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  background-color: #fff;
+  font-feature-settings: 'tnum';
+}
+
+.onebits .ant-picker-input > input {
+    color: rgba(0,0,0,0.65);
+    font-size: 16px;
+}
+
+.onebits-booking-form > span, .onebits-booking-form > small {
+    color: rgba(0,0,0,0.55);
+}
+
+.onebits-booking-form .ant-select-selector {
+  border-radius: 7px !important;
+  padding: 9.57px 16px !important;
+  height: auto !important;
+}
+
+// .ant-card {
+//   border-radius: 12px;
+// }
+
+.ant-picker, .ant-btn {
+  border-radius: 8px;
+}
+
+.ant-pagination-item-link, .ant-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.ferry-icon {
+  width: 48px;
+}
+
+.circle-icon {
+  background: #1AA7EC;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+  padding: 8px;
+}
+
+.available-trips small {
+  color: rgba(0,0,0,0.55);
+}
+
+.ant-input , .ant-input-number-input {
+    //padding: 12px 16px;
+    border-radius: 50px;
+    background-color: #f9f9f9;
+    border: 1px solid #f9f9f9;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  position: relative;
+  background-color: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/***/
+
+.ticket {
+  position: relative;
+  // border: 2px dashed #e8f4f8;
+  background: white;
+  display: inline-block;
+  padding: 1em 2em;
+  border-radius: 8px;
+  width: 100%;
+}
+.ticket:before,
+.ticket:after{
+  height:90px;
+  width:45px;
+  content: '';
+  position: absolute;
+  top: 45%;
+  top: calc(45% - 1px);
+  height: 1.2em;
+  width: 0.6em;
+  background: #e8f4f8;
+  border: 2px solid #e8f4f8;
+}
+.ticket:before {
+  left: -2px;
+  border-radius: 0 1em 1em 0;
+  border-left-color: #e8f4f8;
+}
+.ticket:after {
+  right: -2px;
+  border-radius: 1em 0 0 1em;
+  border-right-color: #e8f4f8;
+}
+
